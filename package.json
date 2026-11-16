@@ -1,0 +1,18 @@
+{
+  "name": "dime-agents",
+  "private": true,
+  "description": "Build, backtest and run your own DIME trading tools: SDK, MCP server, terminal with take profit and stop loss, backtester and recorder.",
+  "type": "module",
+  "scripts": {
+    "dime": "tsx terminal/src/cli.ts",
+    "mcp": "tsx mcp/src/server.ts",
+    "backtest": "tsx research/backtest.ts",
+    "record": "node research/recorder.mjs",
+    "test": "tsx --test terminal/test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "viem": "^2.50.0" },
+  "devDependencies": { "@types/node": "^22.0.0", "tsx": "^4.19.0", "typescript": "^5.6.0" },
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" }
+}

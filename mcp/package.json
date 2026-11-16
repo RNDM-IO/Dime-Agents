@@ -1,0 +1,10 @@
+{
+  "name": "@rndm/dime-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for DIME: let AI agents read the BTC house and trade with a session key.",
+  "type": "module",
+  "bin": { "dime-mcp": "src/server.ts" },
+  "scripts": { "start": "tsx src/server.ts", "typecheck": "tsc --noEmit" },
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" }
+}
